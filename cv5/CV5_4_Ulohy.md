@@ -52,3 +52,8 @@ updates in the summarize_features method:
 **Úloha 5:** Dokumentácia
 1. Napíšte krátku správu, ktorá zhrnie výsledky vašich experimentov s analýzou dát. (Informácie vyčítané z grafov)
 2. Zahrňte pozorovania o vplyve rôznych metód škálovania na dataset.
+
+```
+Tu si treba dat pozor - povedal ze pravdepodobnost 
+ze dvaja budeme mat rovnake je takmer nulova
+```
