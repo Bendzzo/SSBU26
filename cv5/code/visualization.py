@@ -19,3 +19,4 @@ if __name__ == "__main__":
     dataset_norm.plot_all_features_before_after_scaling(X_train_n, X_train_norm, scale_type='Normalization')
     dataset_norm.plot_feature_before_after_scaling(X_train_n, X_train_norm, feature_name='mean area')
     dataset_norm.plot_box_plots(scaled_data=X_train_norm, target=y_train_n)
+

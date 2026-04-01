@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 from sklearn.datasets import load_breast_cancer
-from sklearn.preprocessing import StandardScaler, MinMaxScaler
+from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from typing import Tuple, List, Optional, Callable
@@ -69,12 +69,27 @@ class Dataset:
         """
         scalers = {
             'standard': StandardScaler(),
-            'normalize': MinMaxScaler()
+            'normalize': MinMaxScaler(),
+            'robust': RobustScaler()
         }
         scaler = scalers.get(scale_type)
         if not scaler:
             raise ValueError("Invalid scale_type. Choose 'standard' or 'normalize'.")
         return scaler.fit_transform(X_train), scaler.transform(X_test)
+
+    def summarize_features(self, feature_names = None):
+        df = pd.DataFrame(self.data, columns=self.feature_names)
+
+        if feature_names is not None:
+            df = df[feature_names]
+
+        summary = pd.DataFrame({
+            'unique_values': df.nunique(),
+            'most_common': df.mode().iloc[0],
+            'frequency': df.apply(lambda x: x.value_counts().iloc[0])
+        })
+
+        return summary
 
     def visualize_feature_distribution(self, feature_index: int, scaled_data: Optional[np.ndarray] = None, title_suffix: str = ""):
         """
@@ -196,3 +211,11 @@ class Dataset:
         self.__generic_plot(plt.hist, scaled_feature, bins=20, color='orange', alpha=0.7,
                             title=f"After Scaling: {feature_name}", xlabel=feature_name, ylabel="Frequency",
                             figsize=(12, 6))
+
+    def calculate_statistics(self):
+        df = pd.DataFrame(self.data, columns=self.feature_names)
+        stats = df.agg(['mean', 'median', 'std'])
+
+        return stats
+
+

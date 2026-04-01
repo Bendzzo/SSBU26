@@ -21,3 +21,4 @@ if __name__ == "__main__":
     # plot pair plot for the first 5 features
     selected_features = dataset.feature_names[:5]
     dataset.plot_pair_plot(selected_features)
+
