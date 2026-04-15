@@ -28,6 +28,7 @@ app_ui = ui.page_fluid(
             ui.input_action_button("add_patient", "Add Patient"),
             ui.input_text("patient_id", "Select Patient", placeholder="Patient ID", value="Patient 1"),
             ui.input_select("measurement_type", "Select Measurement Type", choices=data.measurements),
+            ui.input_action_button("calculate_avg", "Calculate average"),
             # Make the slider dynamic by rendering it in the server
             ui.output_ui("dynamic_slider"),
             ui.input_action_button("generate_data", "Generate Data"),

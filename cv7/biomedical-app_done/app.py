@@ -41,6 +41,21 @@ def server(input, output, session):
         txt_status.set(result)
 
     @reactive.Effect
+    @reactive.event(input.calculate_avg)
+    def calculate_average_event():
+        measurement = input.measurement_type()
+        all_patients_data = patient_data_dict.get()
+
+        if measurement:
+            all_series = [df[measurement] for df in all_patients_data.values() if measurement in df.columns]
+            if all_series:
+                combined_data = pd.concat(all_series)
+                overall_avg = combined_data.mean()
+                txt_status.set(f"Average for: {measurement} (all pacients): {overall_avg:.2f}")
+            else:
+                txt_status.set(f"Error: No data for {measurement}.")
+
+    @reactive.Effect
     @reactive.event(input.view_type)
     def view_type_change_event():
         view_type = input.view_type()
