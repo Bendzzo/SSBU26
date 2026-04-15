@@ -1,3 +1,5 @@
+import os
+import re
 from matplotlib import pyplot as plt
 from typing import Callable
 
@@ -19,6 +21,18 @@ class BasePlotter:
         plot_func(*args, **kwargs)
         self.__apply_plot_labels(general_kwargs)
         plt.tight_layout()
+
+        os.makedirs("outputs/plots", exist_ok=True)
+        plot_title = general_kwargs.get('title')
+
+        if not plot_title:
+            plot_title = f"plot_{plot_func.__name__}"
+
+
+        save_path = os.path.join("outputs", "plots", f"{plot_title}.png")
+
+        plt.savefig(save_path)
+
         plt.show()
 
     def __apply_plot_labels(self, general_kwargs):

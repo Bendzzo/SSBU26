@@ -14,7 +14,10 @@ Pridajte do kódu ďalší model strojového učenia (ľubovoľný), a taktiež 
 
 **Uveďte aký ML model a hodnoty jeho parametrov ste použili:**
 
-#TODO - Popis
+**Random Forest Classifier**
+- `n_estimators`: `[10, 50, 100]`
+- `max_depth`: `[None, 10, 20]`
+
 
 ### Úloha 2 (2b)
 
@@ -22,7 +25,7 @@ Implementujte ďalšiu (ľubovoľnú) metriku pre evaluáciu modelov. Nezabudnit
 
 **Uveďte akú metriku ste doplnili:**
 
-#TODO - Metrika
+- Doplnil som recall
 
 ### Úloha 3 (1b)
 
@@ -32,7 +35,12 @@ Do implementácie pridajte ukladanie všetkých grafov, ktoré sa vytvárajú pr
 
 **V skripte `main.py`** nastavte počet replikácií na vyššie číslo (rozumne, podľa vlastného uváženia). Vykonajte beh aplikácie s Vašou implementáciou. Po skončení behu zanalyzujte vygenerované grafy a pár vetami popíšte ich interpretáciu. (Napr. v čom je ktorý ML model lepší, a pod.)
 
-#TODO - Interpretácia
+- Pre experiment som nastavil počet replikácií na 20
+- Random Forest aj Logistická regresia dosahujú na tomto datasete veľmi dobré priemerné výsledky.
+- Logistická regresia dosahuje vyššie priemerné skóre v Accuracy: 0.98 vs 0.96, aj v Recall: 0.98 vs 0.96.
+- Na distribučných grafoch vidíme, že modrá krivka je veľmi úzka a vysoká. 
+To znamená, že model je stabilný a nezáleží mu na tom, ako sa dáta náhodne rozdelia. 
+Krivka pre Random Forest je širšia.
 
 **Odovzdávanie riešenia:** Ako súčasť riešenia zahrňte okrem odpovedí na otázky aj skripty s Vašou implementáciou, vygenerované logy a grafy (všetko môžete dať na Github).
 

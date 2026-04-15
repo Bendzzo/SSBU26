@@ -1,0 +1,39 @@
+2026-04-15 22:18:40,808 - INFO - Application started.
+2026-04-15 22:18:40,825 - INFO - Starting the experiment...
+2026-04-15 22:18:40,836 - INFO - Starting replication 1/30
+2026-04-15 22:20:04,961 - INFO - Application started.
+2026-04-15 22:20:04,976 - INFO - Starting the experiment...
+2026-04-15 22:20:04,985 - INFO - Starting replication 1/30
+2026-04-15 22:20:11,414 - INFO - Starting replication 2/30
+2026-04-15 22:20:12,428 - INFO - Starting replication 3/30
+2026-04-15 22:20:13,556 - INFO - Starting replication 4/30
+2026-04-15 22:20:14,563 - INFO - Starting replication 5/30
+2026-04-15 22:20:15,335 - INFO - Starting replication 6/30
+2026-04-15 22:20:16,213 - INFO - Starting replication 7/30
+2026-04-15 22:20:17,152 - INFO - Starting replication 8/30
+2026-04-15 22:20:18,079 - INFO - Starting replication 9/30
+2026-04-15 22:20:18,998 - INFO - Starting replication 10/30
+2026-04-15 22:20:19,919 - INFO - Starting replication 11/30
+2026-04-15 22:20:20,967 - INFO - Starting replication 12/30
+2026-04-15 22:20:22,076 - INFO - Starting replication 13/30
+2026-04-15 22:20:23,029 - INFO - Starting replication 14/30
+2026-04-15 22:20:23,823 - INFO - Starting replication 15/30
+2026-04-15 22:20:24,913 - INFO - Starting replication 16/30
+2026-04-15 22:20:25,657 - INFO - Starting replication 17/30
+2026-04-15 22:20:26,709 - INFO - Starting replication 18/30
+2026-04-15 22:20:27,636 - INFO - Starting replication 19/30
+2026-04-15 22:20:28,736 - INFO - Starting replication 20/30
+2026-04-15 22:20:29,816 - INFO - Starting replication 21/30
+2026-04-15 22:20:30,727 - INFO - Starting replication 22/30
+2026-04-15 22:20:31,651 - INFO - Starting replication 23/30
+2026-04-15 22:20:32,593 - INFO - Starting replication 24/30
+2026-04-15 22:20:33,497 - INFO - Starting replication 25/30
+2026-04-15 22:20:34,593 - INFO - Starting replication 26/30
+2026-04-15 22:20:35,537 - INFO - Starting replication 27/30
+2026-04-15 22:20:36,636 - INFO - Starting replication 28/30
+2026-04-15 22:20:37,583 - INFO - Starting replication 29/30
+2026-04-15 22:20:38,476 - INFO - Starting replication 30/30
+2026-04-15 22:20:39,355 - INFO - Experiment completed successfully.
+2026-04-15 22:20:39,355 - INFO - Generating plots for the experiment results...
+2026-04-15 22:20:41,682 - INFO - Plots generated successfully.
+2026-04-15 22:20:41,682 - INFO - Application finished successfully.
