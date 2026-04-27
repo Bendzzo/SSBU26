@@ -17,9 +17,9 @@ Normalizujte distribúciu datasetu (pre premenné aj vzorku).
 (Vyberte akúkoľvek kombináciu operácií, ktorá je podľa Vás najlepšia).
 
 **Ktoré operácie ste pri normalizácii použili?**
-Sample normalization: # TODO
-Data Transformation:  # TODO
-Data Scaling:         # TODO
+Sample normalization: Normalization by median
+Data Transformation:  Log10 normalization
+Data Scaling:         Pareto scaling
 ### Úloha 2 (4b)
 
 Použite ľubovoľné štatistické metódy na analýzu datasetu (napr. t-test, correlations, PCA, PLS-DA, Dendrogram, Heatmap, K-means, RandomForest, ..) 
@@ -27,10 +27,11 @@ Použite ľubovoľné štatistické metódy na analýzu datasetu (napr. t-test, 
 **Uveďte aspoň 4 skutočnosti (z 4 rôznych metód), ktoré ste zistili analýzou datasetu:**
 
 (Napr. Pri použití pearsonovho korelačného koeficientu je najvyššia pozitívna korelácia medzi premennými x a y, a koeficient korelácie je 0.992.)
-1: # TODO
-2: # TODO
-3: # TODO
-4: # TODO
+1: Podľa t-testu je najvýznamnejším determinantom rozdielu medzi skupinami premenná Bin.0.82 s najnižšou p-hodnotou (6.0795e-13 )
+2: Analýza hlavných komponentov (PCA) ukázala, že prvá hlavná komponenta (PC 1) vysvetľuje presne 32 % celkového rozptylu dát.
+3: Metóda PLS-DA pomocou VIP skóre identifikovala premennú Bin.0.50 ako najdôležitejšiu pri separácii oboch tried.
+4: Hierarchické zhlukovanie reprezentované heatmapou a dendrogramom preukázalo vytvorenie dvoch hlavných zhlukov, ktoré sa takmer úplne zhodujú s rozdelením na triedy control a patient.
+
 
 Vygenerujte report z vykonanej analýzy a celý výsledný zip file odovzdajte ako prílohu k riešeniu zadania.
 
