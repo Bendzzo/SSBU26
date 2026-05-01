@@ -10,7 +10,11 @@ Dataset obsahuje údaje matky, dcéry a dvoch strýkov, ktorí sú bratmi muža,
 
 **Formulujte hypotézy pre riešenie úlohy:**
 
-#TODO
+Hypotéza 1: Testovaný muž je biologickým otcom dcéry. 
+(Teda testovaní strýkovia sú skutoční biologickí strýkovia dcéry zo strany otca).
+
+Hypotéza 2: Testovaný muž nie je biologickým otcom dcéry.
+Teda testovaní strýkovia nie sú v žiadnom genetickom príbuzenstve s dcérou.
 
 ### Úloha 2 (4b)
 
@@ -18,4 +22,7 @@ Vykonajte analýzu pomocou nástroja FamLinkX. Ako referenčnú databázu použi
 
 **Uveďte LR a pravdepodobnosť (W) pre jednotlivé hypotézy a Váš záver analýzy:**
 
-#TODO
+LR: 1.921
+W (Pravdepodobnosť): 65,76 %
+
+Je dost pravdepodobne ze otec je biologicky otec dcery.
